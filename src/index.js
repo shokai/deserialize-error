@@ -8,7 +8,8 @@ export default function deserializeError (obj) {
 }
 
 export function isSerializedError (obj) {
-  return typeof obj === 'object' &&
+  return obj &&
+    typeof obj === 'object' &&
     typeof obj.name === 'string' &&
     typeof obj.message === 'string' &&
     typeof obj.stack === 'string'
