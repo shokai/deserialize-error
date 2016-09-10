@@ -2,7 +2,7 @@
 
 import {assert} from 'chai'
 import serializeError from 'serialize-error'
-import deserializeError from '../'
+import deserializeError from '../src/'
 
 describe('serialize-deserialize', function () {
   describe('Error', function () {
