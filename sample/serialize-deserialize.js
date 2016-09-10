@@ -11,4 +11,3 @@ assert.equal(err.name, err2.name)
 assert.equal(err.message, err2.message)
 assert.equal(err.stack, err2.stack)
 assert.equal(err.toString(), err2.toString())
-
