@@ -2,7 +2,7 @@
   "name": "deserialize-error",
   "version": "1.0.0",
   "description": "convert Plain Object to Error Object",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "babel src/ --out-dir lib/ --minified --source-maps inline",
     "mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
