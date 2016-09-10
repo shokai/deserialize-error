@@ -1,6 +1,6 @@
 src/
 test/
-samples/
+sample/
 tmp/
 circle.yml
 .babelrc
