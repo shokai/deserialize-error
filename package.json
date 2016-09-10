@@ -1,0 +1,23 @@
+{
+  "name": "deserialize-error",
+  "version": "1.0.0",
+  "description": "convert Plain Objtct to Error Object",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run standard",
+    "standard": "standard"
+  },
+  "keywords": [
+    "error",
+    "deserialize",
+    "serialize"
+  ],
+  "author": "Sho Hashimoto <hashimoto@shokai.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "serialize-error": "^2.0.0",
+    "standard": "^8.0.0"
+  }
+}
