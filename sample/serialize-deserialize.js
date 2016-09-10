@@ -2,7 +2,7 @@ import serializeError from 'serialize-error'
 // import deserializeError from 'deserialize-error'
 import deserializeError from '../'
 
-const err = new Error('bad')
+const err = new Error('ouch')
 console.log(err)
 
 const obj = serializeError(err)
