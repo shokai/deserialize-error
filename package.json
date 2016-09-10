@@ -1,6 +1,6 @@
 {
   "name": "deserialize-error",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "convert Plain Object to Error Object",
   "main": "index.js",
   "scripts": {
