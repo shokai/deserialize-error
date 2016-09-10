@@ -1,7 +1,7 @@
 {
   "name": "deserialize-error",
   "version": "1.0.0",
-  "description": "convert Plain Objtct to Error Object",
+  "description": "convert Plain Object to Error Object",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src/ --out-dir lib/ --minified --source-maps inline",
