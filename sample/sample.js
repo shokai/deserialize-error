@@ -6,6 +6,6 @@ const err = new Error('bad')
 console.log(err)
 
 const obj = serializeError(err)
-const err2 = deserializeError(err)
+const err2 = deserializeError(obj)
 
 console.log(err2)
