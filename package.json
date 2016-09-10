@@ -2,10 +2,11 @@
   "name": "deserialize-error",
   "version": "1.0.0",
   "description": "convert Plain Objtct to Error Object",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "npm run standard",
-    "standard": "standard"
+    "build": "babel src/ --out-dir lib/ --minified --source-maps inline",
+    "mocha": "mocha 'test/*.js' -r babel-polyfill --compilers js:babel-register",
+    "test": "npm run mocha && standard"
   },
   "keywords": [
     "error",
@@ -15,6 +16,8 @@
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "serialize-error": "^2.0.0",
