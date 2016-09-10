@@ -1,2 +1,2 @@
-var deserializeError = require('./lib/')
+var deserializeError = require('./lib/').default
 module.exports = deserializeError
