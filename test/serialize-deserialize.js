@@ -16,11 +16,11 @@ describe('serialize-deserialize', function () {
     })
   })
 
-  describe('custom Error object', function () {
+  describe('custom Error', function () {
     class FooError extends Error {
-      constructor(message){
-        super(message);
-        this.name = 'FooError';
+      constructor (message) {
+        super(message)
+        this.name = 'FooError'
       }
     }
     let err = new FooError('barrrrrr')
@@ -33,19 +33,17 @@ describe('serialize-deserialize', function () {
     })
   })
 
-  describe('string', function () {
+  describe('throw string', function () {
     let err
     try {
-      throw 'fooooo'
+      throw 'fooooo' // eslint-disable-line
     } catch (_err) {
       err = _err
     }
     let err2 = deserializeError(serializeError(err))
     it('should be equal', function () {
-      assert.equal(err.name, err2.name)
-      assert.equal(err.message, err2.message)
-      assert.equal(err.stack, err2.stack)
-      assert.equal(err.toString(), err2.toString())
+      assert.isString(err2)
+      assert.equal(err, err2)
     })
   })
 })
