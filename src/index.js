@@ -9,6 +9,5 @@ export function isSerializedError (obj) {
   return obj &&
     typeof obj === 'object' &&
     typeof obj.name === 'string' &&
-    typeof obj.message === 'string' &&
-    typeof obj.stack === 'string'
+    typeof obj.message === 'string'
 }
