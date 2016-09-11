@@ -27,7 +27,7 @@ describe('isSerializedError', function () {
       assert.notOk(isSerializedError('error'))
       assert.notOk(isSerializedError(undefined))
       assert.notOk(isSerializedError(1))
-      assert.notOk(isSerializedError({name: 'shokai', message: 'hello'}))
+      assert.notOk(isSerializedError({name: 'shokai'}))
     })
   })
 })
