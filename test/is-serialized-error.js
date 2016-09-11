@@ -12,13 +12,22 @@ describe('isSerializedError', function () {
     })
   })
 
+  describe('name and message', function () {
+    it('is serialized error', function () {
+      assert.ok(isSerializedError({
+        name: 'SomeError',
+        message: 'some error'
+      }))
+    })
+  })
+
   describe('other object', function () {
     it('is not serialized error', function () {
       assert.notOk(isSerializedError(null))
       assert.notOk(isSerializedError('error'))
       assert.notOk(isSerializedError(undefined))
       assert.notOk(isSerializedError(1))
-      assert.notOk(isSerializedError({name: 'shokai', message: 'hello'}))
+      assert.notOk(isSerializedError({name: 'shokai'}))
     })
   })
 })
