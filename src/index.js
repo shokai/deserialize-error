@@ -1,8 +1,6 @@
 export default function deserializeError (obj) {
   if (!isSerializedError(obj)) return obj
-  const err = new Error()
-  Object.assign(err, obj)
-  return err
+  return Object.assign(new Error(), {stack: undefined}, obj)
 }
 
 export function isSerializedError (obj) {

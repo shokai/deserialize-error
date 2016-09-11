@@ -9,6 +9,7 @@ describe('serialize-deserialize', function () {
     let err = new Error('foobar')
     let err2 = deserializeError(serializeError(err))
     it('should be equal', function () {
+      assert.instanceOf(err2, Error)
       assert.equal(err.name, err2.name)
       assert.equal(err.message, err2.message)
       assert.equal(err.stack, err2.stack)
@@ -26,6 +27,7 @@ describe('serialize-deserialize', function () {
     let err = new FooError('barrrrrr')
     let err2 = deserializeError(serializeError(err))
     it('should be equal', function () {
+      assert.instanceOf(err2, Error)
       assert.equal(err.name, err2.name)
       assert.equal(err.message, err2.message)
       assert.equal(err.stack, err2.stack)
@@ -44,6 +46,19 @@ describe('serialize-deserialize', function () {
     it('should be equal', function () {
       assert.isString(err2)
       assert.equal(err, err2)
+    })
+  })
+
+  describe('without stacktrace', function () {
+    let err = new Error('foo')
+    delete err.stack
+    let err2 = deserializeError(serializeError(err))
+    it('should be equal', function () {
+      assert.instanceOf(err2, Error)
+      assert.equal(err.name, err2.name)
+      assert.equal(err.message, err2.message)
+      assert.equal(err.stack, err2.stack)
+      assert.equal(err.toString(), err2.toString())
     })
   })
 })
