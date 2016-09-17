@@ -3,7 +3,7 @@
 convert Plain Object to Error Object
 
 - https://github.com/shokai/deserialize-error
-- https://www.npmjs.com/package/deserialize-error
+- https://npmjs.com/package/deserialize-error
 
 [![CircleCI](https://circleci.com/gh/shokai/deserialize-error.svg?style=svg)](https://circleci.com/gh/shokai/deserialize-error)
 

@@ -25,5 +25,18 @@
     "mocha": "^3.0.2",
     "serialize-error": "^2.0.0",
     "standard": "^8.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shokai/deserialize-error.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shokai/deserialize-error/issues"
+  },
+  "homepage": "https://github.com/shokai/deserialize-error#readme"
 }
