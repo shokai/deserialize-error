@@ -9,5 +9,6 @@ dependencies:
 
 test:
   override:
+    - npm run build
     - npm run mocha
     - npm run standard
