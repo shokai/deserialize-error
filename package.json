@@ -24,7 +24,7 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "serialize-error": "^2.1.0",
-    "standard": "^8.0.0"
+    "standard": "^10.0.3"
   },
   "directories": {
     "test": "test"
