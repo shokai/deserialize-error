@@ -4,6 +4,6 @@ sample/
 tmp/
 circle.yml
 .babelrc
-.eslintrc.json
+package-lock.json
 *.log
 *.log.*
